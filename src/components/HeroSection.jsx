@@ -9,21 +9,30 @@ export const HeroSection = () => {
       <div className="container max-w-4xl mx-auto text-center z-10">
         <div className="space-y-6">
           <h1 className="text-4xl md:text-6xl font-bold tracking-tight">
-            <span className="opacity-0 animate-fade-in"> Hi, I'm</span>
+            <span className="opacity-0 animate-fade-in"> Hi, I</span>
             <span className="text-primary opacity-0 animate-fade-in-delay-1">
               {" "}
-              Pedro
+              Syed
             </span>
             <span className="text-gradient ml-2 opacity-0 animate-fade-in-delay-2">
               {" "}
-              Machado
+              Mohammad Ali
             </span>
           </h1>
 
           <p className="text-lg md:text-xl text-muted-foreground max-2-2xl mx-auto opacity-0 animate-fade-in-delay-3">
-            I create stellar web experiences with modern technologies.
-            Specializing in front-end development, I build interfaces that are
-            both beautiful and functional.
+            I love creating websites and web applications that look great and
+            work smoothly. My focus is on crafting the logic behind the
+            interface, where I enjoy turning ideas into beautiful, functional
+            experiences especially with modern{" "}
+            <span className="text-blue-500 font-semibold px-1 py-0.5 rounded bg-blue-50 shadow-sm">
+              Web2
+            </span>{" "}
+            and{" "}
+            <span className="text-purple-500 font-semibold px-1 py-0.5 rounded bg-purple-50 shadow-sm">
+              Web3
+            </span>{" "}
+            technologies.
           </p>
 
           <div className="pt-4 opacity-0 animate-fade-in-delay-4">
