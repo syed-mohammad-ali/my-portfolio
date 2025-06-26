@@ -34,44 +34,54 @@ export const ContactSection = () => {
         <div className="p-10 rounded-lg shadow-xs space-y-8 mb-12">
           <h3 className="text-2xl font-semibold mb-6">Contact Information</h3>
 
+          {/* Contact Info */}
           <div className="flex flex-col items-center space-y-8">
-            <div className="flex items-center space-x-4">
-              <div className="p-3 rounded-full bg-primary/10">
-                <Mail className="h-6 w-6 text-primary" />
+            {/* Wrapper div that contains the icon column and text column */}
+            <div className="flex items-center justify-center space-x-8">
+              {/* Column for Icons */}
+              <div className="flex flex-col space-y-8">
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Mail className="h-6 w-6 text-primary" />
+                </div>
+                <div className="p-3 rounded-full bg-primary/10">
+                  <Phone className="h-6 w-6 text-primary" />
+                </div>
+                <div className="p-3 rounded-full bg-primary/10">
+                  <MapPin className="h-6 w-6 text-primary" />
+                </div>
               </div>
-              <div>
-                <h4 className="font-medium">Email</h4>
-                <a
-                  href="mailto:syed.mohammad.ali2000@outlook.com"
-                  className="text-muted-foreground hover:text-primary transition-colors"
-                >
-                  syed.mohammad.ali2000@outlook.com
-                </a>
-              </div>
-            </div>
 
-            <div className="flex items-center space-x-4">
-              <div className="p-3 rounded-full bg-primary/10">
-                <Phone className="h-6 w-6 text-primary" />
-              </div>
-              <div>
-                <h4 className="font-medium">Phone</h4>
-                <a
-                  href="tel:+91789**244**2"
-                  className="text-muted-foreground hover:text-primary"
-                >
-                  +91 789**244**2
-                </a>
-              </div>
-            </div>
-
-            <div className="flex items-center space-x-4">
-              <div className="p-3 rounded-full bg-primary/10">
-                <MapPin className="h-6 w-6 text-primary" />
-              </div>
-              <div>
-                <h4 className="font-medium">Location</h4>
-                <span className="text-muted-foreground">India, MP, Bhopal</span>
+              {/* Column for Text */}
+              <div className="flex flex-col justify-between space-y-8 text-center">
+                <div>
+                  <h4 className="font-medium">Email</h4>
+                  <a
+                    href="mailto:syed.mohammad.ali2000@outlook.com"
+                    className="text-muted-foreground hover:text-primary transition-colors"
+                  >
+                    syed.mohammad.ali2000@outlook.com
+                  </a>
+                </div>
+                <div>
+                  <h4 className="font-medium">Phone</h4>
+                  <a
+                    href="tel:+91789**244**2"
+                    className="text-muted-foreground hover:text-primary"
+                  >
+                    +91 789**244**2
+                  </a>
+                </div>
+                <div>
+                  <h4 className="font-medium">Location</h4>
+                  <a
+                    href="https://www.google.com/maps/search/?api=1&query=India,MP,Bhopal"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-muted-foreground hover:text-primary transition-colors underline"
+                  >
+                    India, MP, Bhopal
+                  </a>
+                </div>
               </div>
             </div>
           </div>
